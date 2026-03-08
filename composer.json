@@ -1,0 +1,22 @@
+{
+    "name": "obrainwave/ai-semantic-engine-phpsdk",
+    "description": "Official PHP SDK for the AI Semantic Engine",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Olaiwola Akeem Salau",
+            "email": "olaiwolaakeem@gmail.com"
+        }
+    ],
+    "homepage": "https://github.com/obrainwave/ai-semantic-engine-phpsdk",
+    "require": {
+        "php": ">=7.4",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "AiSemanticEngine\\": "src/AiSemanticEngine/"
+        }
+    }
+}
