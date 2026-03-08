@@ -15,7 +15,7 @@ composer require obrainwave/ai-semantic-engine-phpsdk
 require 'vendor/autoload.php';
 use AiSemanticEngine\Client;
 
-$client = new Client('http://localhost:8200', 'YOUR_API_KEY');
+$client = new Client('https://ai.quizcore.org', 'YOUR_API_KEY');
 
 // 1. Embed Text
 $embeddings = $client->embed("Hello world");

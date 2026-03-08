@@ -10,7 +10,7 @@ class Client
     private GuzzleClient $httpClient;
     private string $apiKey;
 
-    public function __construct(string $apiKey, string $baseUrl = 'http://localhost:8200')
+    public function __construct(string $apiKey, string $baseUrl = 'https://ai.quizcore.org')
     {
         $this->apiKey = $apiKey;
         $this->httpClient = new GuzzleClient([

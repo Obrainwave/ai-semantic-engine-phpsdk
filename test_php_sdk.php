@@ -6,7 +6,7 @@ use AiSemanticEngine\Client;
 
 function getApiKey() {
     $email = 'php_sdk_' . time() . '@example.com';
-    $ch = curl_init('http://localhost:8200/signup');
+    $ch = curl_init('https://ai.quizcore.org/signup');
     $payload = json_encode([
         'name' => 'PHP SDK Tester ' . time(),
         'email' => $email,
@@ -25,7 +25,7 @@ echo "Getting test API key...\n";
 $apiKey = getApiKey();
 
 echo "Initializing SDK with key: $apiKey\n";
-$client = new Client($apiKey, 'http://localhost:8200');
+$client = new Client($apiKey, 'https://ai.quizcore.org');
 
 echo "\n--- Testing embed() ---\n";
 $embedRes = $client->embed(['Hello from PHP SDK', 'Second sentence']);
